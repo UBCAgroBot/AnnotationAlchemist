@@ -1,1 +1,8 @@
-
+name: AAapi
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - conda-forge::fastapi
+  - conda-forge::uvicorn
+  - pip:
