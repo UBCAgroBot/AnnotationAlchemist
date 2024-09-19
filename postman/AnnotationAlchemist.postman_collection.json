@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "b1eb9e59-109a-4862-891c-245d9bdca04b",
+		"name": "AnnotationAlchemist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27921826"
+	},
+	"item": [
+		{
+			"name": "AAClient Request - YOLO - YAML",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data; boundary=----WebKitFormBoundaryAxvPGux7uX5DnIeb"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "host",
+						"value": "localhost"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "convert_from",
+							"value": "YOLO"
+						},
+						{
+							"key": "convert_to",
+							"value": "YAML"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_82.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_57.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_3.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/.DS_Store"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_60.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_76.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_84.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_82.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_81.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_57.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_84.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_6.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_60.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_76.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_3.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_14.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_14.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_81.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_39.txt"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_39.jpeg"
+						},
+						{
+							"key": "files",
+							"value": "YOLOTestData/agri_0_6.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/upload-folder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload-folder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
