@@ -1,6 +1,7 @@
 from fastapi import APIRouter, File, Form, UploadFile
 from typing import List
 from fastapi.responses import JSONResponse
+from app.services.ConversionManager import ConversionManager
 
 router = APIRouter()
 
@@ -18,9 +19,5 @@ async def upload_folder(
 	Receives a JS FormData object as a message body
 	"""
 	# Process the files
-	print("Convert from:" + convert_from)
-	print("Convert to:" + convert_to)
-	for file in files:
-		print("Got file: " + file.filename)
-
+	ConversionManager(files, convert_from, convert_to)
 	return JSONResponse(content={"data": "Files uploaded successfully!", "error":None})
