@@ -16,5 +16,5 @@ pnpm dev
 ~~~
 cd AAApi
 conda env create -f environment.yml
-python main.py
+uvicorn app.main.py --reload # It is important to run this command from within the AAApi directory
 ~~~
