@@ -5,16 +5,16 @@ from fastapi import UploadFile
 from typing import List
 
 def YOLOtoPascalVOC(upload_files: List[UploadFile]) -> List[UploadFile]:
-	if len(upload_files) == 0:
-		return []
 
 	upload_txts= _FilterNonTextFiles(upload_files)
 
+	print("<annotation>")
 	for upload_txt in upload_txts:
 		with upload_txt.file as f:
 			for line in f:
 				line = line.decode("utf-8").strip()
 				print(line)
+	print("</annotation>")
 
 	return []
 
